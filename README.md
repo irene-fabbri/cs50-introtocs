@@ -100,4 +100,4 @@
 
 ## ⚠️ Academic Honesty
 
-> This repository is meant for storing my project and files from Harvard University CS50x's course. Keep in mind the course's [academic honesty](https://cs50.harvard.edu/x/2024/honesty/): if you are currently enrolled, try figure out a solution yourself before looking at other's implementation.
+_This repository is meant for storing my project and files from Harvard University CS50x's course. Keep in mind the course's [academic honesty](https://cs50.harvard.edu/x/2024/honesty/): if you are currently enrolled, try figure out a solution yourself before looking at other's implementation._
