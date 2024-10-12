@@ -1,0 +1,5 @@
+Orange: Oranges are the rebellious and bold type. They share a need for high-energy, confidence-boosting sounds.
+
+The description fits since the music in the database is pretty loud, energetic with not much speechiness. A valence of 0.48 (midrange) suggest
+a search for energy rather then for meaning in a song.
+Also, it fits the spectrum at Helmholz, Patrick & Meyer, Michael & Robra-Bissantz, Susanne. (2019). Feel the Moosic: Emotion-based Music Selection and Recommendation. 10.18690/978-961-286-280-0.11.
