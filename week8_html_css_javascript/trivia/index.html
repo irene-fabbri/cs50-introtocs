@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+
+         <!-- title font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bigelow+Rules&display=swap" rel="stylesheet">
+        <!-- body font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <!-- custom stylesheet -->
+        <link href="styles.css" rel="stylesheet">
+        <!-- title -->
+        <title>Trivia!</title>
+        <!-- icon        -->
+        <link href="magic.png" rel="icon" type="image/x-icon">
+        <!-- javascript       -->
+        <script>
+            // Check answers to questions
+            document.addEventListener('DOMContentLoaded', function() {
+
+                let correctButtons = document.querySelectorAll('.correct');
+                for (let i = 0; i < correctButtons.length; i++) {
+                    correctButtons[i].addEventListener('click', function() {
+                        correctButtons[i].style.backgroundColor = 'rgb(0,123,43)';
+                        //look for the first element of class ans in the div that contains this correct
+                        correctButtons[i].parentElement.querySelector('.ans').innerHTML = 'Correct!';
+                    });
+                }
+
+                let incorrectButtons = document.querySelectorAll('.incorrect');
+                for (let i = 0; i < incorrectButtons.length; i++) {
+                    incorrectButtons[i].addEventListener('click', function() {
+                        incorrectButtons[i].style.backgroundColor = 'rgb(198, 17, 17)';
+                        incorrectButtons[i].parentElement.querySelector('.ans').innerHTML = 'Incorrect, you muggle.';
+                    });
+                }
+
+                let check = document.querySelector('#check');
+                check.addEventListener('click', function() {
+                    let input = document.querySelector('input');
+                    if(input.value.localeCompare("crucio", undefined, {sensitivity: 'accent'}) === 0) {
+                        input.style.backgroundColor = 'rgb(0,123,43)';
+                        input.parentElement.querySelector('.ans').innerHTML = 'Correct!';
+                    } else {
+                        input.style.backgroundColor = 'rgb(198, 17, 17)';
+                        input.parentElement.querySelector('.ans').innerHTML = 'Incorrect, you muggle';
+                    }
+
+                });
+
+            });
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <div class = "closed question">
+                    <h3>Which of those spells whould you use for torturing a being?</h3>
+
+                    <button class="incorrect">Avada Kedavra</button>
+                    <button class="correct">Sectusempra</button>
+                    <button class="incorrect">Stupeficium</button>
+                    <button class="incorrect">Petrificus Totalus</button>
+                    <div class ="ans"></div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <div class="open question">
+                    <h3>None of the above is the most common choice for torture. Which is the most common spell to torture a being?</h3>
+                    <input type="text">
+                    <button id="check">Check Answer</button>
+                    <div class ="ans"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
