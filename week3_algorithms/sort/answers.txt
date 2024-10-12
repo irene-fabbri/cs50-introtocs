@@ -1,0 +1,11 @@
+sort1 uses: bubble sort
+
+How do you know?: its time efficiency varies dramatically depending on the ordering of the initial list
+
+sort2 uses: merge sort
+
+How do you know?: its time efficiency is better in most cases and id depends on the number of lines, not on their initial order
+
+sort3 uses: selection sort
+
+How do you know?: its time efficiency does not depend on the ordering of the initial list
