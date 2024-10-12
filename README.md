@@ -6,6 +6,7 @@
 ## :book: **Content**
 
 ### Week 1 - C
+> C. Source Code. Machine Code. Compiler. Correctness, Design, Style. Visual Studio Code. Syntax Highlighting. Escape Sequences. Header Files. Libraries. Manual Pages. Types. Conditionals. Variables. Loops. Linux. Graphical User Interface (GUI). Command-Line Interface (CLI). Constants. Comments. Pseudocode. Operators. Integer Overflow. Floating-Point Imprecision.
 
 - [Mario More](week1_C/mario-more/mario.c) - _create an adjacent pyramid of blocks._
 
@@ -14,6 +15,8 @@
 ---
 
 ### Week 2 - Arrays
+> Preprocessing. Compiling. Assembling. Linking. Debugging. Arrays. Strings. Command-Line Arguments. Cryptography.
+
 - [Readability](week2_arrays/readability/readability.c) - _computes the approximate grade level needed to comprehend some text._
 
 - [Scrabble](week2_arrays/scrabble/scrabble.c) - _determine which of two scrabble words is worth more._
@@ -23,6 +26,7 @@
 ---
 
 ### Week 3 - Algorithms
+> Searching: Linear Search, Binary Search. Sorting: Bubble Sort, Selection Sort, Merge Sort. Asymptotic Notation: O, Ω, Θ. Recursion.
 
 - [Sort](week3_algorithms/sort) - _analyze three sorting programs to determine which algorithms they use._
 
@@ -33,6 +37,7 @@
 ---
 
 ### Week 4 - Memory
+> Pointers. Segmentation Faults. Dynamic Memory Allocation. Stack. Heap. Buffer Overflow. File I/O. Images.
 - [Volume](week4_memory/volume/volume.c) - _modify the volume of an audio file._
 
 - [Filter More](week4_memory/filter/filter-more/filter.c) - _program that applies filters to BMPs._
@@ -44,6 +49,7 @@
 ---
 
 ### Week 5 - Data Structures
+> Abstract Data Types. Queues, Stacks. Linked Lists. Trees, Binary Search Trees. Hash Tables. Tries.
 
 - [Inheritance](week5_data_structures/inheritance/inheritance.c) - _simulates the inheritance of blood types for each member of a family._
 
@@ -52,8 +58,9 @@
 ---
 
 ### Week 6 - Python
+> Python: Functions, Arguments, Return Values; Variables; Boolean Expressions, Conditionals; Loops. Modules, Packages.
 
-- [PS-6 Mario More](week6_python/sentimental-mario-more/mario.py) - _create an adjacent pyramid of blocks._
+- [Mario More](week6_python/sentimental-mario-more/mario.py) - _create an adjacent pyramid of blocks._
 
 - [Credit](week6_python/sentimental-credit/credit.py) - _program that determines whether a provided credit card number is valid according to Luhn's algorithm._
 
@@ -64,21 +71,25 @@
 ---
 
 ### Week 7 - SQL
+> SQL: Tables; Types; Statements; Constraints; Indexes; Keywords, Functions; Transactions. Race Conditionals. SQL Injection Attacks.
 
 - [Songs](week7_SQL/songs/) - _SQL queries that answer questions about a database of songs._
 
 - [Movies](week7_SQL/movies/) - _SQL queries that answer questions about a database of movies._
 
-- [Fiftyville](week7_SQL/fiftyville/)** - _write SQL queries to solve a mystery._
+- [Fiftyville](week7_SQL/fiftyville/) - _write SQL queries to solve a mystery._
 
 ---
 
 ### Week 8 - HTML, CSS, JavaScript
+> Internet: Routers; TCP/IP; DNS. HTTP: URLs, GET, POST. HTML: Tags; Attributes. Servers. CSS: Properties; Selectors. Frameworks. JavaScript: Variables; Conditionals; Loops. Events.
+
 - [Trivia](week7_SQL/trivia/index.html) - _simple webpage that lets users answer trivia questions._
 
 ---
 
 ### Week 9 - Flask
+> Flask. Route. Decorators. Requests, Responses. Sessions. Cookies.
 
 - [Birthdays](week9_flask/birthdays/) - _web application that keeps track of birthdays._
 
