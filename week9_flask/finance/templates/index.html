@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block main %}
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th class="text-start">Symbol</th>
+                <th class="text-end">Shares</th>
+                <th class="text-end">Price</th>
+                <th class="text-end">TOTAL</th>
+                <th class="text-end"></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for stock in stocks %}
+                <tr>
+                    <td class="text-start">{{ stock.symbol }}</td>
+                    <td class="text-end">{{ stock.shares }}</td>
+                    <td class="text-end">{{ stock.price | usd }}</td>
+                    <td class="text-end">{{ stock.total | usd }}</td>
+                    <td class="text-end col-1">
+                        <form action="/sell" method="post" class="form-control-sm">
+                            <input type="hidden" name="symbol" value="{{ stock.symbol }}">
+                            <input autocomplete="off" class="form-control mx-auto w-auto" name="shares" placeholder="Shares" type="number" min = 1>
+                            <button class="btn btn-primary sell" type="submit">
+                                Sell
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+            {% endfor %}
+            <tfoot>
+                <tr>
+                    <td class="border-0 fw-bold text-end" colspan="3">Cash</td>
+                    <td class="border-0 text-end"> {{ cash | usd }}</td>
+                </tr>
+                <tr>
+                    <td class="border-0 fw-bold text-end" colspan="3">TOTAL</td>
+                    <td class="border-0 w-bold text-end">{{ total | usd}}</td>
+                </tr>
+            </tfoot>
+        </tbody>
+    </table>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+
+            let sell = document.querySelectorAll('.sell');
+            sell.addEventListener('click', function() {
+                    sell.parentElement.querySelector('#shares').innerHTML = 'Correct!';
+            });
+        });
+    </script>
+{% endblock %}
